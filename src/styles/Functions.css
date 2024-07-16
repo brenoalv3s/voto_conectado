@@ -1,0 +1,138 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 60px;
+}
+
+.header-func {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 101%;
+}
+
+.header-func-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: -70px;
+    margin-left: 39%;
+}
+
+.header-func-p {
+    font-size: 20px;
+    color: #727272;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 39%;
+    margin-bottom: -7%;
+}
+
+.header-video-container {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: right;
+}
+
+.header-video,
+.header-image {
+    width: 45%; /* Set equal width for image and video */
+    height: auto;
+    margin: 10px; /* Add margin for spacing */
+}
+
+.header-video {
+    width: 56%;
+    height: auto;
+    margin-top: -50%;
+    margin-right: 5%;
+    margin-bottom: -17%;
+}
+
+.header-image {
+    width: 40%;
+    height: auto;
+    margin-left: -5px; /* Adjust margin as needed */
+}
+
+/* Main content padding for large screens */
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 300px;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .header-func-title {
+        font-size: 3.5rem;
+    }
+
+    .main-content {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-func-title {
+        font-size: 3rem;
+    }
+
+    .main-content {
+        padding: 20px 10px;
+    }
+
+    .sidebar {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-func {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-func-title {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-func-title {
+        font-size: 2rem;
+    }
+
+    .main-content {
+        padding: 15px 10px;
+    }
+}
